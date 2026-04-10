@@ -49,7 +49,7 @@ async function run(): Promise<void> {
   }
 }
 
-function buildPrComment(result: import('@staleflags/core').ScanResult): string {
+function buildPrComment(result: import('staleflags-core').ScanResult): string {
   const { summary } = result;
   const lines: string[] = [];
 

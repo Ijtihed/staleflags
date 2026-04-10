@@ -16,9 +16,9 @@ This is a Turborepo monorepo with three packages:
 
 | Package | Path | Description |
 |---------|------|-------------|
-| `@staleflags/core` | `packages/core` | Scanner engine, flag discovery, environment comparison, dead code analysis |
+| `staleflags-core` | `packages/core` | Scanner engine, flag discovery, environment comparison, dead code analysis |
 | `staleflags` | `packages/cli` | CLI wrapper — parses args, calls core, formats output |
-| `@staleflags/action` | `packages/action` | GitHub Action wrapper |
+| `staleflags-action` | `packages/action` | GitHub Action wrapper |
 
 ## Development
 
