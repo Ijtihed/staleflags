@@ -1,0 +1,11 @@
+{
+  "exclude": [
+    "node_modules", "dist", "coverage", ".git", "vendor", "build",
+    ".next", "__pycache__", ".turbo",
+    "test"
+  ],
+  "ignoreFlags": [
+    "ENABLE_X", "ENABLE_NEW_CHECKOUT", "USE_V2_PARSER",
+    "ENABLE_FAST", "ENABLE_LEGACY_COMPAT", "USE_V2"
+  ]
+}
