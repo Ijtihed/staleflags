@@ -1,0 +1,50 @@
+{
+  "name": "staleflags",
+  "version": "0.1.0",
+  "description": "Find dead feature flags and quantify the dead code they create",
+  "type": "module",
+  "bin": {
+    "staleflags": "./dist/bin.js"
+  },
+  "main": "./dist/bin.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo",
+    "prepublishOnly": "npm run build"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "dependencies": {
+    "@staleflags/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "keywords": [
+    "feature-flags",
+    "dead-code",
+    "stale-flags",
+    "lint",
+    "static-analysis",
+    "devtools",
+    "cli",
+    "github-action",
+    "env",
+    "dotenv",
+    "cleanup"
+  ],
+  "license": "MIT",
+  "author": "Ijtihed",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ijtihed/staleflags",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://staleflags.vercel.app",
+  "bugs": "https://github.com/Ijtihed/staleflags/issues",
+  "engines": {
+    "node": ">=20"
+  }
+}

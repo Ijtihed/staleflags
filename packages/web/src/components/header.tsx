@@ -1,0 +1,42 @@
+"use client";
+
+export default function Header() {
+  return (
+    <header className="fixed top-0 left-0 w-full z-50 flex justify-end items-center px-10 py-4 mix-blend-difference">
+      <nav className="hidden md:flex gap-6">
+        <a
+          href="https://github.com/Ijtihed/staleflags"
+          target="_blank"
+          rel="noreferrer"
+          className="px-3 py-2 text-neutral-500 hover:text-white transition-colors font-[JetBrains_Mono] text-xs uppercase tracking-[0.15em]"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.npmjs.com/package/staleflags"
+          target="_blank"
+          rel="noreferrer"
+          className="px-3 py-2 text-neutral-500 hover:text-white transition-colors font-[JetBrains_Mono] text-xs uppercase tracking-[0.15em]"
+        >
+          npm
+        </a>
+        <a
+          href="https://github.com/Ijtihed/staleflags#readme"
+          target="_blank"
+          rel="noreferrer"
+          className="px-3 py-2 text-white font-[JetBrains_Mono] text-xs uppercase tracking-[0.15em] hover:opacity-70 transition-opacity"
+        >
+          Docs
+        </a>
+        <a
+          href="https://github.com/Ijtihed/staleflags/blob/main/CONTRIBUTING.md"
+          target="_blank"
+          rel="noreferrer"
+          className="px-3 py-2 text-neutral-500 hover:text-white transition-colors font-[JetBrains_Mono] text-xs uppercase tracking-[0.15em]"
+        >
+          Contributing
+        </a>
+      </nav>
+    </header>
+  );
+}

@@ -1,0 +1,55 @@
+{
+  "name": "@staleflags/core",
+  "version": "0.1.0",
+  "description": "Core engine for staleflags — find dead feature flags and quantify the dead code they create",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist .turbo",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "dependencies": {
+    "fast-glob": "^3.3.0",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0",
+    "@types/node": "^22.0.0"
+  },
+  "keywords": [
+    "feature-flags",
+    "dead-code",
+    "stale-flags",
+    "lint",
+    "static-analysis",
+    "devtools",
+    "env",
+    "dotenv",
+    "cleanup"
+  ],
+  "license": "MIT",
+  "author": "Ijtihed",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ijtihed/staleflags",
+    "directory": "packages/core"
+  },
+  "homepage": "https://staleflags.vercel.app",
+  "bugs": "https://github.com/Ijtihed/staleflags/issues",
+  "engines": {
+    "node": ">=20"
+  }
+}

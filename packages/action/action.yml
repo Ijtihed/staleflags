@@ -1,0 +1,21 @@
+name: staleflags
+description: Find dead feature flags and quantify the dead code they create
+branding:
+  icon: flag
+  color: orange
+inputs:
+  github-token:
+    description: 'GitHub token for PR comments'
+    default: ${{ github.token }}
+  fail-on:
+    description: 'When to fail: dead, aging, all, none'
+    default: 'none'
+  age-threshold:
+    description: 'Days before a flag is considered aging'
+    default: '90'
+  config:
+    description: 'Path to .staleflagsrc.json'
+    default: ''
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
