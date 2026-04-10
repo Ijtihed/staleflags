@@ -1,5 +1,5 @@
-import { analyzeFlags } from '@staleflags/core';
-import type { StaleflagsConfig } from '@staleflags/core';
+import { analyzeFlags } from 'staleflags-core';
+import type { StaleflagsConfig } from 'staleflags-core';
 import { formatConsole } from '../reporter/console.js';
 import { formatJson } from '../reporter/json.js';
 import { formatMarkdown } from '../reporter/markdown.js';

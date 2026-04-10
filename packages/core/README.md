@@ -1,4 +1,4 @@
-# @staleflags/core
+# staleflags-core
 
 Core engine for [staleflags](https://github.com/Ijtihed/staleflags) — find dead feature flags and quantify the dead code they create.
 

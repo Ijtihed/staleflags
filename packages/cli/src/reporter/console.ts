@@ -1,4 +1,4 @@
-import type { FlagReport, ScanResult } from '@staleflags/core';
+import type { FlagReport, ScanResult } from 'staleflags-core';
 
 const RESET = '\x1b[0m';
 const BOLD = '\x1b[1m';

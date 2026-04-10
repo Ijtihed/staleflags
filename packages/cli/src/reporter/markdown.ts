@@ -1,4 +1,4 @@
-import type { FlagReport, ScanResult } from '@staleflags/core';
+import type { FlagReport, ScanResult } from 'staleflags-core';
 
 export function formatMarkdown(result: ScanResult): string {
   const lines: string[] = [];

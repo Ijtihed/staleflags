@@ -1,6 +1,6 @@
 import * as core from '@actions/core';
 import * as github from '@actions/github';
-import { analyzeFlags } from '@staleflags/core';
+import { analyzeFlags } from 'staleflags-core';
 
 async function run(): Promise<void> {
   try {

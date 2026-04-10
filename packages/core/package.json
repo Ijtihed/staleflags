@@ -1,6 +1,6 @@
 {
-  "name": "@staleflags/core",
-  "version": "0.1.0",
+  "name": "staleflags-core",
+  "version": "0.1.1",
   "description": "Core engine for staleflags — find dead feature flags and quantify the dead code they create",
   "type": "module",
   "main": "./dist/index.js",
@@ -22,10 +22,10 @@
   "files": ["dist", "README.md", "LICENSE"],
   "dependencies": {
     "fast-glob": "^3.3.0",
+    "typescript": "^5.7.0",
     "yaml": "^2.7.0"
   },
   "devDependencies": {
-    "typescript": "^5.7.0",
     "vitest": "^3.1.0",
     "@types/node": "^22.0.0"
   },

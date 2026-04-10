@@ -1,6 +1,6 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { analyzeFlags, branchPreview } from '@staleflags/core';
+import { analyzeFlags, branchPreview } from 'staleflags-core';
 
 const BOLD = '\x1b[1m';
 const RESET = '\x1b[0m';
